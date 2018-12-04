@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>New Signup</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="./media/favicon.png">
+		<!--<script src="./javascript/dropdown.js"></script>-->
+		<script src="./javascript/nav-click.js"></script>
+		<script src="./javascript/validator.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+	</head>
+	<body>
+		<div class="indent">
+			<div class="main">
+				<!--header-->
+				<header>
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<a class="navbar-left logo" href="./index.html"><img src="./media/logo.png" height="65" width=auto></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About </a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="about.html#FAQ">FAQ</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="about.html#contact-location">Location</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="about.html#contact-location">Contact Us</a>
+									</div>
+								</li>
+
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Gallery </a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="gallery.html#gallery1">Camp in Action</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="gallery.html#gallery2">Campus</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="gallery.html#gallery3">Trips</a>
+									</div>
+								</li>
+
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="calendar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Calendar </a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="calendar.html">2018 Session Dates</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="calendar.html#upcoming">Upcoming Events</a>
+									</div>
+								</li>
+
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle active" href="signup-junction.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sign Up </a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="new-signup.html">New Campers</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="returning-login.html">Returning Campers</a>
+									</div>
+								</li>
+
+							</ul>
+
+						</div>
+					</nav>
+				</header>
+				<!--header-->
+				<div class="content">
+					<div class="qmarktext">
+						<img class="marks" src="./media/forest.png" />
+						<h2 class="ret">First Time Campers</h2>
+					</div>
+					<form class="needs-validation signup" action="./register-success.html" method="post" novalidate>
+						<div class="form-row">
+
+							<div class="col-md-4 mb-3">
+								<label for="fatherFname">Father's First name</label>
+								<input type="text" class="form-control" id="fatherFname" placeholder="Yaakov" required>
+								<div class="invalid-feedback">
+									Enter a name, letters only.
+								</div>
+							</div>
+							<div class="col-md-4 mb-3">
+								<label for="motherFname">Mother's First name</label>
+								<input type="text" class="form-control" id="motherFname" placeholder="Miriam" required>
+								<div class="invalid-feedback">
+									Enter a name, letters only.
+								</div>
+							</div>
+							<div class="col-md-4 mb-3">
+								<label for="lastName">Last name</label>
+								<input type="text" class="form-control" id="lastName" placeholder="Cohen"  required>
+								<div class="invalid-feedback">
+									Enter a name, letters only.
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-4 mb-3">
+								<label for="childFname">Child's First name</label>
+								<input type="text" class="form-control" id="childFname" placeholder="Shmuel" required>
+								<div class="invalid-feedback">
+									Enter a name, letters only.
+								</div>
+							</div>
+							<div class="col-md-2 mb-3">
+								<label for="ssn">Social Security #</label>
+								<input type="number" class="form-control" id="ssn" placeholder="012-34-5678" required>
+								<div class="invalid-feedback">
+									Enter a valid ssn.
+								</div>
+							</div>
+							<div class="col-md-2 mb-3">
+								<!-- Date input -->
+								<label class="control-label" for="birthdate">Birth Date</label>
+								<input class="form-control" id="birthdate" name="date" placeholder="MM/DD/YYYY" type="text" required>
+								<div class="invalid-feedback">
+									Choose a date.
+								</div>
+							</div>
+							<div class="col-md-2 mb-3">
+								<label for="age">Age</label>
+								<input type="number" class="form-control" id="age" placeholder="##" required>
+								<div class="invalid-feedback">
+									Enter a number.
+								</div>
+							</div>
+							<div class="col-md-2 mb-3">
+								<label for="grade">Grade</label>
+								<input type="number" class="form-control" id="grade" placeholder="##" required>
+								<div class="invalid-feedback">
+									Enter a number.
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="col-md-2 mb-3">
+								<label for="Address">House #</label>
+								<input type="number" class="form-control" id="housenum" placeholder="123" required>
+								<div class="invalid-feedback">
+									Enter a number.
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="Address">Address</label>
+								<input type="text" class="form-control" id="Address" placeholder="Main Street" required>
+								<div class="invalid-feedback">
+									Enter an address.
+								</div>
+							</div>
+							<div class="col-md-4 mb-3">
+								<label for="Address2">Address 2</label>
+								<input class="form-control" type="text" id="Address2" placeholder="Apartment, studio, or floor" >
+
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-4 mb-3">
+								<label for="city">City</label>
+								<input type="text" class="form-control" id="city" placeholder="Albuquerque" required>
+								<div class="invalid-feedback">
+									Please provide a valid city.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="state">State</label>
+								<input type="text" class="form-control" id="state" placeholder="New Mexico" required>
+								<div class="invalid-feedback">
+									Please provide a valid state.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="zip">Zip</label>
+								<input type="number" class="form-control" id="zip" placeholder="87120" required>
+								<div class="invalid-feedback">
+									Please provide a valid zip.
+								</div>
+							</div>
+							<div class="mb-3 col-md-2">
+								<label for="country">Country</label>
+								<select id="country" class="form-control" required>
+									<option value="">Select</option>
+									<option>USA</option>
+									<option>England</option>
+									<option>Israel</option>
+									<option>Canada</option>
+									<option>France</option>
+								</select>
+								<div class="invalid-feedback">
+									Please choose a country.
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="col-md-3 mb-3">
+								<label for="phone1">Home Phone #</label>
+								<input type="tel" class="form-control" id="phone1" placeholder="(123) 456-7890" required>
+								<div class="invalid-feedback">
+									Please provide a valid phone #.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="phone2">Mother's Cell #</label>
+								<input type="tel" class="form-control" id="phone2" placeholder="(123) 456-7890" required>
+								<div class="invalid-feedback">
+									Please provide a valid phone #.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="phone3">Father's Cell #</label>
+								<input type="tel" class="form-control" id="phone3" placeholder="(123) 456-7890" required>
+								<div class="invalid-feedback">
+									Please provide a valid phone #.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="phone4">Work #</label>
+								<input type="tel" class="form-control" id="phone4" placeholder="(123) 456-7890" required>
+								<div class="invalid-feedback">
+									Please provide a valid phone #.
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="col-md-4 mb-3">
+								<label for="doc">Doctor</label>
+								<input type="text" class="form-control" id="doc" placeholder="Dr. Hoffman" required>
+								<div class="invalid-feedback">
+									Please provide a Doctor.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="phone5">Doctor's Phone #</label>
+								<input type="tel" class="form-control" id="phone5" placeholder="(123) 456-7890" required>
+								<div class="invalid-feedback">
+									Please provide a valid phone #.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="insurance">Insurance Provider</label>
+								<input type="text" class="form-control" id="insurance" placeholder="Oxford Health" required>
+								<div class="invalid-feedback">
+									Please provide a valid insurance provider.
+								</div>
+							</div>
+							<div class="col-md-2 mb-3">
+								<label for="policy">Policy #</label>
+								<input type="number" class="form-control" id="policy" placeholder="845732" required>
+								<div class="invalid-feedback">
+									Please provide a policy #.
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="col-md-4 mb-3">
+								<label for="medical">Medical Information</label>
+								<textarea class="form-control" type="text" id="medical" rows="6" placeholder="Allergies&#10;Medications&#10;Dietary Restrictions&#10;Etc." ></textarea>
+							</div>
+							<div class="col-md-4 mb-3">
+								<label for="bunk">Bunkmate Requests</label>
+								<textarea class="form-control" type="text" id="bunk" rows="6" placeholder="Menachem Greenberg&#10;Yoni Feldheim&#10;Ahron Klein&#10;Etc."></textarea>
+							</div>
+							<div class="col-md-4 mb-3">
+								<label for="notes">Other Notes</label>
+								<textarea class="form-control" type="text" id="notes" rows="6" placeholder="Special requests&#10;Important info&#10;Etc."></textarea>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="person@website.com" required>
+								<div class="invalid-feedback">
+									Please provide a valid email.
+								</div>
+							</div>
+							<div class="form-group col-md-3">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="DuckDuckGoose" required>
+								<div class="invalid-feedback">
+									Please provide a valid password. At least 6 characters.
+								</div>
+							</div>
+						</div>
+						<br />
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+								<label class="form-check-label" for="invalidCheck"> Agree to terms and conditions </label>
+								<div class="invalid-feedback">
+									You must agree before submitting.
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-primary" id="register" type="submit">
+							Submit Registration
+						</button>
+					</form>
+				</div>
+			</div>
+			<!--Footer-->
+			<footer>
+				<img class="aca" src="./media/aca.png" />
+				<div class="copyright">
+					Website designed by: Moshe Hirsch © 2018
+				</div>
+			</footer>
+		</div>
+		<script>
+			$(document).ready(function() {
+				var date_input = $('input[name="date"]');
+				//our date input has the name "date"
+				var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+				var options = {
+					format : 'mm/dd/yyyy',
+					container : container,
+					todayHighlight : true,
+					autoclose : true,
+				};
+				date_input.datepicker(options);
+			});
+		</script>
+	</body>
+</html>

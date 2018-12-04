@@ -1,0 +1,49 @@
+.col-sm {
+	border-radius: 5px;
+	max-width: 380px;
+	padding: 15px 35px;
+	margin: 0 auto;
+	background-color: rgba(1, 50, 31, .5);
+	border: 1px solid #18226A;
+}
+h3.cal {
+	font-family: 'oswald';
+	color: #263E60;
+	font-size: 45px;
+	text-decoration: underline;
+}
+p.cal {
+	padding: 0 10px;
+	font-size: 18px;
+}
+.col-sm.upcoming {
+	max-width: 100%;
+	margin: 10px 60px;
+	padding-top: 35px;
+}
+.container.cvds {
+	padding-bottom: 40px;
+}
+
+.fullcal {
+
+}
+img.fullcal {
+	float: right;
+	top: 30px;
+	padding-right: 20px;
+	padding: 10px;
+	max-width: 300px;
+	max-height: 100%;
+	width: auto;
+	border-radius: 20px;
+	opacity: .5;
+}
+h2#upcoming {
+	padding-left: 60px;
+}
+p {
+	padding-left: 20px;
+	color: #674539;
+	font-size: 20px;
+}
